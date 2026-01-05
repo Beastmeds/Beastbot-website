@@ -10,11 +10,10 @@
 
 <header>
   <div class="logo" onclick="goHome()">
-    <img src="assets/logo.png" alt="Beast Bot">
+    <img src="assets/logo.png">
     <span>Beast Bot</span>
   </div>
-
-  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
 </header>
 
 <nav id="menu">
@@ -22,49 +21,46 @@
   <a href="commands.html">Commands</a>
   <a href="status.html">Status</a>
 </nav>
-  
-<main id="content">
 
-  <!-- Start Auswahl -->
-  <section id="select">
-    <h1>Wähle deinen Bot</h1>
-    <div class="buttons">
-      <button onclick="showBot('whatsapp')">WhatsApp Bot</button>
-      <button onclick="showBot('discord')">Discord Bot</button>
-    </div>
-  </section>
+<main>
 
-  <!-- WhatsApp Bot -->
-  <section id="whatsapp" class="hidden">
-    <h1>🤖 Beast Bot – WhatsApp</h1>
-    <p>Ein mächtiger WhatsApp Bot mit Moderation, Fun, KI & Owner Commands.</p>
-    <ul>
-      <li>⚡ Schnelle Commands</li>
-      <li>🧠 KI Features</li>
-      <li>🛡️ Gruppen Moderation</li>
-      <li>👑 Owner Commands</li>
-    </ul>
+<section id="select">
+  <h1>Wähle deinen Bot</h1>
+  <div class="big-buttons">
+    <button onclick="showBot('whatsapp')">📱 WhatsApp Bot</button>
+    <button onclick="showBot('discord')">💬 Discord Bot</button>
+  </div>
+</section>
 
-    <a class="invite" href="https://chat.whatsapp.com/DEIN-LINK" target="_blank">
-  ➕ WhatsApp Bot hinzufügen
-</a>
-  </section>
+<section id="whatsapp" class="hidden">
+  <h1>🤖 Beast Bot – WhatsApp</h1>
+  <p>Moderation, KI, Fun & Owner Commands.</p>
 
-  <!-- Discord Bot -->
-  <section id="discord" class="hidden">
-    <h1>🤖 Beast Bot – Discord</h1>
-    <p>Der perfekte Discord Bot für Server Management & Fun.</p>
-    <ul>
-      <li>🎮 Minecraft Infos</li>
-      <li>📊 Server Stats</li>
-      <li>🛡️ Auto Moderation</li>
-      <li>⚙️ Slash Commands</li>
-    </ul>
+  <ul>
+    <li>⚡ Schnell & stabil</li>
+    <li>🧠 KI Features</li>
+    <li>🛡️ Gruppen Schutz</li>
+  </ul>
 
-    <a class="invite" href="https://discord.com/oauth2/authorize?client_id=BOTID&scope=bot" target="_blank">
-  ➕ Discord Bot einladen
-</a>
-  </section>
+  <a class="invite" href="https://chat.whatsapp.com/DEINLINK" target="_blank">
+    ➕ WhatsApp Bot hinzufügen
+  </a>
+</section>
+
+<section id="discord" class="hidden">
+  <h1>🤖 Beast Bot – Discord</h1>
+  <p>Perfekt für Server, Minecraft & Moderation.</p>
+
+  <ul>
+    <li>📊 Server Stats</li>
+    <li>🎮 Minecraft Infos</li>
+    <li>⚙️ Slash Commands</li>
+  </ul>
+
+  <a class="invite" href="https://discord.com/oauth2/authorize?client_id=BOTID&scope=bot" target="_blank">
+    ➕ Discord Bot einladen
+  </a>
+</section>
 
 </main>
 
