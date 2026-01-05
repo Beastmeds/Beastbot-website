@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beast Bot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo" onclick="goHome()">
+    <img src="assets/logo.png" alt="Beast Bot">
+    <span>Beast Bot</span>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</header>
+
+<nav id="menu">
+  <a href="#">Team</a>
+  <a href="#">Features</a>
+  <a href="#">Commands</a>
+  <a href="#">Kontakt</a>
+</nav>
+
+<main id="content">
+
+  <!-- Start Auswahl -->
+  <section id="select">
+    <h1>Wähle deinen Bot</h1>
+    <div class="buttons">
+      <button onclick="showBot('whatsapp')">WhatsApp Bot</button>
+      <button onclick="showBot('discord')">Discord Bot</button>
+    </div>
+  </section>
+
+  <!-- WhatsApp Bot -->
+  <section id="whatsapp" class="hidden">
+    <h1>🤖 Beast Bot – WhatsApp</h1>
+    <p>Ein mächtiger WhatsApp Bot mit Moderation, Fun, KI & Owner Commands.</p>
+    <ul>
+      <li>⚡ Schnelle Commands</li>
+      <li>🧠 KI Features</li>
+      <li>🛡️ Gruppen Moderation</li>
+      <li>👑 Owner Commands</li>
+    </ul>
+  </section>
+
+  <!-- Discord Bot -->
+  <section id="discord" class="hidden">
+    <h1>🤖 Beast Bot – Discord</h1>
+    <p>Der perfekte Discord Bot für Server Management & Fun.</p>
+    <ul>
+      <li>🎮 Minecraft Infos</li>
+      <li>📊 Server Stats</li>
+      <li>🛡️ Auto Moderation</li>
+      <li>⚙️ Slash Commands</li>
+    </ul>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
